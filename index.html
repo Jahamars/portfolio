@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive macOS Style Portfolio</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <section>
+      <div class="icon-container">
+        <div class="icon-box about" data-modal="about">
+          <i class="fa-regular fa-address-card"></i>
+        </div>
+        <div class="icon-box projects" data-modal="projects">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="icon-box testimonial" data-modal="testimonial">
+          <i class="fa-solid fa-users-rectangle"></i>
+        </div>
+        <div class="icon-box contact" data-modal="contact">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+
+    <div class="popup" id="about">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body about-container">
+          <div class="img-frame">
+            <img
+              src="https://i.ibb.co/X8vTTz5/jahamars.jpg"
+              alt="" />
+          </div>
+          <div class="hero-content">
+            <h1>Jahongir</h1>
+            <p>
+              I am an enthusiastic and dedicated information security with a strong passion for solving CTF challenges, open-source programming, and everything related to Linux. With a solid foundation in cybersecurity, I thrive on tackling complex problems and finding innovative solutions within my field of expertise.
+I am always eager to expand my knowledge and continuously learn new tools, technologies, and techniques that can improve both my personal skills and the overall security landscape.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="projects">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <div class="skill-list">
+            <h1>Skills</h1>
+            <ul>
+              <li>C++</li>
+              <li>Bash</li>
+              <li>Python</li>
+              <li>Network Security</li>
+              <li>Web, OS and Server Security</li>
+              <li>Offensive Security</li>
+              <li>Linux System Administration</li>
+              <li>DevOps Tools</li>
+            </ul>
+          </div>
+
+          <div class="project-container">
+            <h1>Projects</h1>
+            <div class="all-projects">
+              <div class="project-box">
+                <img
+                  src="https://raw.githubusercontent.com/Jahamars/marshabits/main/marshabits.png"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Marshabits</h3>
+                  <a href="https://github.com/Jahamars/marshabits" target="_blank">
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                 </a>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="https://avatars.githubusercontent.com/u/146427118?s=400&u=aeb6abbe273bfa40fe37cfcb1bca01f6f0bb4db7&v=4"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Github</h3>
+                  <a href="https://github.com/Jahamars" target="_blank">
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="testimonial">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body testimonial-container">
+          <h1>Сertifications </h1>
+
+          <div class="slider-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="https://raw.githubusercontent.com/Jahamars/sert/main/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/sertification/photos/Screenshot%20from%202024-09-15%2020-07-51.png"
+                      alt="" />
+                    <h5>Casp Security Architecture</h5>
+                  </div>
+                    <a href="https://github.com/Jahamars/sert/blob/main/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/sertification/cybrary-cert-casp-security-architecture.pdf" target="_blank">
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="https://raw.githubusercontent.com/Jahamars/sert/main/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/sertification/photos/Screenshot%20from%202024-09-15%2020-21-53.png"
+                      alt="" />
+                    <h5>Cybersecurity Es- certificate</h5>
+                  </div>
+                 <a href="https://github.com/Jahamars/sert/blob/main/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/sertification/JahongirAhmadaliev-Cybersecurity%20Es-certificate.pdf" target="_blank">
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="https://raw.githubusercontent.com/Jahamars/sert/main/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/sertification/photos/Screenshot%20from%202024-09-15%2020-07-51.png"
+                      alt="" />
+                    <h5>Cryptography</h5>
+                  </div>
+                    <a href="https://github.com/Jahamars/sert/blob/main/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/sertification/cybrary-cert-cryptography.pdf" target="_blank">
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="https://raw.githubusercontent.com/Jahamars/sert/main/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/sertification/photos/Screenshot%20from%202024-09-15%2020-07-51.png"
+                      alt="" />
+                    <h2>web</h2>
+                  </div>
+                    <a href="https://github.com/Jahamars/sert/blob/main/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/sertification/cybrary-cert-web-application-hacking.pdf" target="_blank">
+                  <button class="more-btn">
+                    <span>Learn More</span>
+                  </button>
+                  </a>
+                </div>
+              </div>
+              <ul class="control" id="custom-control">
+                <li class="prev">
+                  <ion-icon class="arrow" name="caret-back-outline"></ion-icon>
+                </li>
+                <li class="next">
+                  <ion-icon
+                    class="arrow"
+                    name="caret-forward-outline"></ion-icon>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="contact">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body contact-container">
+          <h1>Contact</h1>
+          <p>Hi there, you can contact with me via email.</p>
+          <form action="https://formspree.io/f/mzzpqayb" method="POST">
+          <form>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.." />
+
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="text"
+              name="text"
+              placeholder="Your mail.." />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"></textarea>
+
+            <button class="submit-btn more-btn" type="submit">
+              <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
+            </button>
+          </form>
+         </form>
+        </div>
+      </div>
+    </div>
+  </body>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+<script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
